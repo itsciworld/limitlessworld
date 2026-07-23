@@ -14,8 +14,7 @@ class MainShell extends StatelessWidget {
   const MainShell({super.key, required this.navigationShell});
 
   void _onTap(int index) {
-    // Tapping the active tab again pops it back to its root, which is the
-    // behaviour users expect from a bottom bar.
+    //  from a bottom bar.
     navigationShell.goBranch(
       index,
       initialLocation: index == navigationShell.currentIndex,
